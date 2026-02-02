@@ -6,7 +6,7 @@ let num2 = "";
 let operacion = null;
 let Limpiar = false;
 
-function limpiarDisplay() {
+function actualizarDisplay() {
   display.value = num1;
 }
 
@@ -16,7 +16,7 @@ function numeros(number) {
     Limpiar = false;
   }
   num1 += number.toString();
-  limpiarDisplay();
+  actualizarDisplay();
 }
 
 function manejoOperaciones(op) {
@@ -55,14 +55,14 @@ function calcular() {
   operacion = null;
   num2 = "";
   Limpiar = true;
-  limpiarDisplay();
+  actualizarDisplay();
 }
 
 function borrar() {
   num1 = "";
   num2 = "";
   operacion = null;
-  limpiarDisplay();
+  actualizarDisplay();
 }
 
 botones.forEach((boton) => {
