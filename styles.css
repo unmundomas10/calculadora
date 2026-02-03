@@ -7,9 +7,7 @@ body {
   min-height: auto;
   background-color: #b0c4de;
   margin: 50px auto;
-  border: 5px solid black;
   display: grid;
-  justifi-content: center;
   justify-items: center;
 }
 
